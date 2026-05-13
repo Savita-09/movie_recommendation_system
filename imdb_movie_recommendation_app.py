@@ -411,7 +411,8 @@ def load_imdb_data():
     Or use this sample data structure if CSV not available
     """
     try:
-        movies_df = pd.read_csv("C:\\Users\\savita\\Downloads\\imdb_movie_dataset.csv")
+        #movies_df = pd.read_csv("C:\\Users\\savita\\Downloads\\imdb_movie_dataset.csv")
+        movies_df = pd.read_csv("movies.csv")
     except FileNotFoundError:
         st.warning("⚠️ movies.csv not found. Using sample IMDB-inspired data. To use real data:")
         st.info("""
