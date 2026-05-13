@@ -411,7 +411,7 @@ def load_imdb_data():
     Or use this sample data structure if CSV not available
     """
     try:
-        movies_df = pd.read_csv("C:\\Users\\savita\\Downloads\\imdb_movie_dataset.csv")
+        movies_df = pd.read_csv("https://github.com/Savita-09/movie_recommendation_system/blob/main/imdb_movie_dataset.csv")
     except FileNotFoundError:
         st.warning("⚠️ movies.csv not found. Using sample IMDB-inspired data. To use real data:")
         st.info("""
